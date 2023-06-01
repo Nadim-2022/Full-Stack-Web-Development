@@ -23,6 +23,11 @@ sequenceDiagram
     activate server
     server-->>browser: [{ "content": "anything", "date": "2023-2-6" }, ... ]
     deactivate server
+    
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/favicon.ico
+    activate server
+    server-->>browser: favicon file
+    deactivate server
 
 
 ```
@@ -52,5 +57,10 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: [{ "content": "anything", "date": "2023-2-6" }, ... ]
+    deactivate server
+    
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/favicon.ico
+    activate server
+    server-->>browser: favicon file
     deactivate server
 ```
