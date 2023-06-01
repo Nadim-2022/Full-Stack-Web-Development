@@ -9,8 +9,6 @@ sequenceDiagram
     server-->>data.jason: Save new note
     deactivate server
     
-    browser render new note
-
 
 
 ```
@@ -26,7 +24,7 @@ sequenceDiagram
     activate server
     server-->>data.jason: Save new note
     
-    browser render new note
+
 
     
 ```
